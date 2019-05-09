@@ -73,15 +73,20 @@ public class TestMultiplication {
 
 		assertEquals(expectedANS, actualANS);
 	}
-/*
-	//@Test
+
+	@Test
 	public void testMultiplicationThreeNumberArrayList() {
 		// Test three number multiplications
 		// Here should init prepared answer
-
-		int expectedANS = 0;
+		int a = 7;
+		int b = 5;
+		int c = 3;
+		int expectedANS = 3*5*7;
+		ArrayList<Integer> array = new ArrayList<Integer>(Arrays.asList(a, b,c));
 
 		// Here should new Factorization object with Mockito stub
+		Factorization factorizationStub = mock(Factorization.class);
+		when(factorizationStub.factorization(expectedANS)).thenReturn(array);
 		// Here should ask stub object to act whatever we want
 
 		Multiplication multiplication = new Multiplication();
@@ -90,14 +95,17 @@ public class TestMultiplication {
 		assertEquals(expectedANS, actualANS);
 	}
 
-	//@Test
+	@Test
 	public void testMultiplicationOneNumberArrayList() {
 		// Test one number multiplications, complete test coverage to 100%
 		// Here should init prepared answer
-
-		int expectedANS = 0;
+		int a = 7;
+		int expectedANS = 7;
+		ArrayList<Integer> array = new ArrayList<Integer>(Arrays.asList(a,));
 
 		// Here should new Factorization object with Mockito stub
+		Factorization factorizationStub = mock(Factorization.class);
+		when(factorizationStub.factorization(expectedANS)).thenReturn(array);
 		// Here should ask stub object to act whatever we want
 
 		Multiplication multiplication = new Multiplication();
@@ -105,5 +113,5 @@ public class TestMultiplication {
 
 		assertEquals(expectedANS, actualANS);
 	}
-*/
+
 }
