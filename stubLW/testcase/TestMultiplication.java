@@ -100,7 +100,7 @@ public class TestMultiplication {
 		// Test one number multiplications, complete test coverage to 100%
 		// Here should init prepared answer
 		int a = 7;
-		int expectedANS = 7;
+		int expectedANS = -1;
 		ArrayList<Integer> array = new ArrayList<Integer>(Arrays.asList(a,));
 
 		// Here should new Factorization object with Mockito stub
