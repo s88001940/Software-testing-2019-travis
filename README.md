@@ -1,5 +1,7 @@
 # Software-testing-2019-travis
 
+[![codecov](https://codecov.io/gh/s88001940/Software-testing-2019-travis/branch/master/graph/badge.svg)](https://codecov.io/gh/s88001940/Software-testing-2019-travis)
+
 ## Makefile
 make [all]		- Compile JAVA class
 
